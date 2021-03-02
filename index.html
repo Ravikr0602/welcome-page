@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Note</title>
+</head>
+<style>
+
+body
+{
+	background:url("./welcome.jpg");
+	background-repeat: no-repeat;
+	
+	
+}
+
+h1
+{
+	color:white;
+	text-align:center;
+	margin-top:340px;
+	text-shadow:1px 1px 1px black;
+	font-size:50px;
+}
+</style>
+
+<body>
+    <h1 id="welcome_note">Welcome</h1>
+</body>
+
+<script>
+
+    (function(){
+	var welcome = document.getElementById("welcome_note");
+	var name = prompt("Hello User What is your name?");
+	welcome.textContent = "Welcome " + name;
+})();
+
+</script>
+</html>
